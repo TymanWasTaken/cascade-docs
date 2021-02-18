@@ -1,6 +1,6 @@
 # Table of contents
 
-* [README](README.md)
+* [Index](README.md)
 * [Cascade docs](docs/README.md)
   * [Inhibitors](docs/inhibitors.md)
   * [Commands](docs/commands.md)
