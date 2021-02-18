@@ -4,10 +4,9 @@
 
 ## Guide
 
-* [Index](guide/docs.md)
-
 ---
 
+* [Index](docs.md)
 * [Setting up](setup.md)
 * [Commands](commands.md)
 * [Listeners](listeners.md)

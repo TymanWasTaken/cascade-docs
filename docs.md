@@ -4,5 +4,5 @@ These guides teach you how to make a bot using cascade. Go to the next page if t
 
 | Table of contents |
 | :---: |
-| [Setting up](../setup.md)  [Creating Commands](../commands.md) [ Creating Listeners \(WIP\)](../listeners.md)  [Creating Inhibitors \(WIP\)](../inhibitors.md) |
+| [Setting up](setup.md)  [Creating Commands](commands.md) [ Creating Listeners \(WIP\)](listeners.md)  [Creating Inhibitors \(WIP\)](inhibitors.md) |
 
