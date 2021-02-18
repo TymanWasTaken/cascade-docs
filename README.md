@@ -1,16 +1,10 @@
 # Index
 
-##                       Cascade: Library for Discordeno
+![Cascade: library for discordeno](https://cdn.discordapp.com/attachments/807406629070700584/807601297590059038/imageedit_1_3499097741.png)
 
-![](https://cdn.discordapp.com/attachments/807406629070700584/807601297590059038/imageedit_1_3499097741.png)
+The cascade project is a library for the [discordeno](https://github.com/discordeno/discordeno) library that allows dynamic and easy command handling with many features, such as easily creatable bots that allow lots of customization.
 
-[!\[CodeFactor\]\(https://img.shields.io/codefactor/grade/github/TymanWasTaken/cascade?style=for-the-badge\)](https://www.codefactor.io/repository/github/tymanwastaken/cascade)
-
-\[!\[discord badge\]\(https://img.shields.io/badge/Join%20the-Discord-blue?style=for-the-badge\)\]\(https://discord.gg/Dsue9NYRZs\) \[!\[uses badges\]\(https://img.shields.io/badge/Uses-Badges-yellow?style=for-the-badge\)\]\(https://shields.io\) \[!\[works probably\]\(https://img.shields.io/badge/Works-Probably-green?style=for-the-badge\)\]\(https://shields.io\) \[!\[made with typescript\]\(https://img.shields.io/badge/Made%20With-Typescript-orange?style=for-the-badge\)\]\(https://www.typescriptlang.org/\)
-
-The cascade project is a library for the [discordeno](https://github.com/discordeno/discordeno) library that allows dynamic and easy command handling with many features, such as easily creatable bots that allow lots of customization
-
-## WARNING: THIS IS A WORK IN PROGRESS AND ANYTHING HERE CURRENTLY WILL LIKELY BE CHANGED LATER.
+## WARNING: THIS IS A WORK IN PROGRESS AND ANYTHING IN THE LIBRARY CURRENTLY WILL LIKELY BE CHANGED LATER.
 
 **Website/Docs**: [https://cascade.tyman.tech](https://cascade.tyman.tech) \(WIP\)
 
