@@ -13,7 +13,7 @@ In this folder, create a file. This will be the main file of your bot. Import th
 import { CascadeClient } from "https://deno.land/x/cascade@1.0.5/mod.ts";
 ```
 
-You then need to create the client and handlers, as demonstrated below.
+You then need to create the client as demonstrated below.
 
 ```typescript
 import { CascadeClient } from ".https://deno.land/x/cascade@1.0.5/mod.ts";
