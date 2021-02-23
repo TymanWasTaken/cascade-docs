@@ -10,45 +10,33 @@ Then make a new folder where your code will be.
 In this folder, create a file. This will be the main file of your bot. Import the `CascadeClient` like this:
 
 ```typescript
-import { CascadeClient } from "https://deno.land/x/cascade@1.0.3/mod.ts";
+import { CascadeClient } from "https://deno.land/x/cascade@1.0.5/mod.ts";
 ```
 
 You then need to create the client and handlers, as demonstrated below.
 
 ```typescript
-import { 
-    CascadeClient,
-    CascadeCommandHandler,
-    CascadeListenerHandler,
-    CascadeInhibitorHandler
-} from "https://deno.land/x/cascade@1.0.3/mod.ts";
-
-const commandHandler = new CascadeCommandHandler({
-  commandDir: join(Deno.cwd(), "commands"),
-  prefix: "prefix here" // The prefix for your bot
-});
-const listenerHandler = new CascadeListenerHandler({
-  listenerDir: join(Deno.cwd(), "listeners"),
-});
-const inhibitorHandler = new CascadeInhibitorHandler({
-  inhibitorDir: join(Deno.cwd(), "inhibitors"),
-});
+import { CascadeClient } from ".https://deno.land/x/cascade@1.0.5/mod.ts";
+import { join } from "https://deno.land/std@0.86.0/path/mod.ts";
 
 const client = new CascadeClient({
-    token: 'token here', // Your bot's token.
-    commandHandler,
-    listenerHandler,
-    inhibitorHandler,
-    owners: ["put your discord id here"], // This is an array of IDs containing the "owners" of the bot. Be careful about who you put in here.
-    verbose: true // Only put this if you want cascade to log a lot of things.
+    token: "Replace this with your token",
+    commandHandlerOptions: {
+        commandDir: join(Deno.cwd(), "commands"),
+        prefix: "Replace this with your prefix"
+    },
+    listenerHandlerOptions: {
+        listenerDir: join(Deno.cwd(), "listeners"),
+    },
+    inhibitorHandlerOptions: {
+        inhibitorDir: join(Deno.cwd(), "inhibitors"),
+    },
+    owners: ["487443883127472129"], // Replace with the owners of the bot's ids
+    verbose: true // Disable this if you don't want cascade to log things
 });
 
-client.listenerHandler.setEmitters({ // This sets all the emitters that you can use in your listeners. You may add whatever you want here, these are just the recommended defaults.
-  commandHandler,
-  listenerHandler,
-  inhibitorHandler,
-  client
-});
+await client.init();
+await client.login();
 ```
 
 This sets up the base for your bot, and is where it all starts. If you run it now, it will throw errors because it can't find the listeners, commands, and inhibitors directories. To fix this, create all of those. Then the bot should then run.

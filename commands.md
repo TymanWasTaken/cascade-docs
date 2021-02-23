@@ -7,7 +7,7 @@ To create a new command, make a new file in your commands directory. It can have
 In this file, create an new class extending `CascadeCommand` and make it the default export.
 
 ```typescript
-import { CascadeCommand } from "https://deno.land/x/cascade@1.0.3/mod.ts";
+import { CascadeCommand } from "https://deno.land/x/cascade@1.0.5/mod.ts";
 
 export default class ExampleCommand extends CascadeCommand {
 
@@ -17,7 +17,7 @@ export default class ExampleCommand extends CascadeCommand {
 You then need to create the constructor, which contains the command options such as the name, aliases, arguments, etc.
 
 ```typescript
-import { CascadeCommand } from "https://deno.land/x/cascade@1.0.3/mod.ts";
+import { CascadeCommand } from "https://deno.land/x/cascade@1.0.5/mod.ts";
 
 export default class ExampleCommand extends CascadeCommand {
     public constructor() {
@@ -50,6 +50,7 @@ List of currently available argument types:
 * user
 * channel
 * snowflake
+* flags \(these are a special type, more on them in another part of this guide\)
 
 Now that you have the options all set up, create the `exec` function, which is run when the command is executed.
 

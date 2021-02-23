@@ -17,18 +17,24 @@ new CascadeClient(options: CascadeClientOptions)
 #### Example:
 
 ```typescript
-const client = new CascadeClient({
-    token: 'token',
-    commandHandler,
-    listenerHandler,
-    inhibitorHandler,
+new CascadeClient({
+    token: JSON.parse(await Deno.readTextFile("./test_config.json")).token,
+    commandHandlerOptions: {
+        commandDir: join(Deno.cwd(), "commands"),
+        prefix: "ae!"
+    },
+    listenerHandlerOptions: {
+        listenerDir: join(Deno.cwd(), "listeners"),
+    },
+    inhibitorHandlerOptions: {
+        inhibitorDir: join(Deno.cwd(), "inhibitors"),
+    },
     owners: ["487443883127472129"],
     verbose: true
-})
+});
 ```
 
 {% hint style="info" %}
-1. This example assumes you have already created all of the handlers.
-2. Verbose tells cascade if it should log or not. \(Turn this off if you already have logging\)
+1. Verbose tells cascade if it should log or not. \(Turn this off if you already have logging or want to make your own\)
 {% endhint %}
 
